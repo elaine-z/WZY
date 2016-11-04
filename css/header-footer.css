@@ -1,0 +1,25 @@
+.header{
+	height: 52px;
+	line-height: 52px;
+	background-color:#f8f8f8;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.header img{
+	margin-left: 30px;
+}
+.footer{
+	height: 52px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	font-family: ;
+	line-height: 52px;
+	/*font-weight: 600;*/
+	font-size: 30px;
+	background-color: #bfbfbf;
+}
