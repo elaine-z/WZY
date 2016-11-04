@@ -1,0 +1,83 @@
+body{
+	background-color: #efeeee;
+	font-family: "微软雅黑";
+}
+.words-wrapper{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	z-index: 10;
+	height: 133px;
+	background-color: rgba(255,255,255,.5);
+}
+.pic-explain{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	color: #000;
+	bottom: 10px;
+	z-index: 9999;
+	text-align: left;
+	font-size: 20px;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.pic-explain{
+		font-size: 12px;
+	}
+}
+.carousel-indicators li{
+	position: relative;
+}
+.carousel-caption {
+	text-align: left;
+}
+.item{
+	position: relative;
+}
+.carousel-indicators {
+    bottom: 0px;
+}
+.nav-wrapper{
+	width: 100%;
+	/*height: 124px;*/
+	margin: 40px 0px;
+	background-color: #d8d6d5;
+}
+.nav-wrapper ul li{
+	/*height: 124px;*/
+	
+}
+.nav-icon,.nav-word{
+	max-width: 100%;
+	text-align: center;
+}
+.nav{
+	margin: 40px 0px;
+}
+.nav-word{
+	margin-top: 10px;
+	font-size: 15px;
+}
+.details{
+	background-color: #d8d6d5;
+}
+.info-title{
+	text-align: center;
+	color: #9b4822;
+	font-size: 25px;
+}
+.info-content{
+	margin-top: 20px;
+}
+.info-pic{
+	max-width: 100%;
+}
+.info-word{
+	margin-top: 20px;
+	text-align: center;
+}
+.white{
+	padding-left: 0px;
+	padding-right: 0px;
+}
