@@ -13,14 +13,41 @@
 	</head>
 	<body>
 		<div class="header">
-			<img src="" />
+			<img src="../../images/back.png" />
 			<p class="head">重邮百科</p>
 		</div>
-		<div class="content container">
-			
+		<div class="content">
+			<div class="pic-content">
+				<div class="pic-choose-title">请选择图片上传</div>
+				<ul class="row" id="pics">
+					<li class="col-xs-4 col-sm-4 col-lg-4">
+						<div class="pic-choose" id="pic-chosen"><span class="">+</span></div>
+						<input class="pic-words"placeholder="单行输入..."/>
+					</li>
+					<li class="col-xs-4 col-sm-4 col-lg-4">
+						<div class="pic-choose"><span class="">+</span></div>
+						<input class="pic-words"placeholder="单行输入..."/>
+					</li>
+					<li class="col-xs-4 col-sm-4 col-lg-4">
+						<div class="pic-choose"><span class="">+</span></div>
+						<input class="pic-words"placeholder="单行输入..."/>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+				<div class="sure">
+					<button type="submit" class="concel left">取消</button>
+					<button type="submit" class="ok right">确认</button>
+				</div>
+			</div>
 		</div>
 		<div class="footer">
 			微校微+工作室出品
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var wid = $('#pic-chosen').width();
+				$('.pic-choose').css({'height':wid});
+			})
+		</script>
 	</body>
 </html>

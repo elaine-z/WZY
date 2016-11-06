@@ -1,11 +1,12 @@
-.content{
-	/*position: relative;
-	top: 0;
-	bottom: 0;*/
+body{
+	width: 100%;
 	background-image: url(../../images/Encyclopedia/ency-background.png);
-	/*background-repeat: no-repeat;*/
-	/*background-size: 100%;*/
-	/*overflow: scroll;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.content{
+	width: 100%;
 }
 .content-list{
 	margin-top: 20px;
@@ -29,21 +30,23 @@
 }
 .add{
 	width: 90%;
+	height: 32px;
+	line-height: 32px;
+	vertical-align: middle;
 	margin: 0 auto;
 	margin-top: 30px;
 }
 .add-New{
 	color: #000;
+	font-size: 22px;
 }
 .left{
 	float: left;
-	color: #000;
-	font-size: 16px;
+	color: #93b9c4;
 }
 .right{
 	float: right;
-	color: #000;
-	font-size: 16px;
+	color: #93b9c4;
 }
 .detail-content{
 	/*width: 90%;*/
@@ -52,10 +55,11 @@
 	margin-top: 35px;
 }
 .detail-top-title{
-	font-size: 16px;
+	font-size: 20px;
+	font-weight: 600;
 }
 .add-content,.add-discribe,.add-name,.small-title,.detail-info{
-	width: 94%;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 20px;
 	background-color: rgba(255,255,255,.2);
@@ -83,6 +87,7 @@
 	text-align: center;
 	font-size: 20px;
 	margin-top: 30px;
+	font-weight: 600;
 	margin-bottom: 25px;
 }
 .add-name,.add-content,.add-discribe{
@@ -123,6 +128,17 @@
 	border-radius: 3px;
 }
 .add-pic{
-	font-size: 12px;
+	font-size: 16px;
 	color: #000;
+}
+.bs-example{
+	width: 90%;
+	margin: 0 auto;
+}
+.input-group{
+	margin-top: 30px;
+}
+.form-add{
+	width: 90%;
+	margin: 0 auto;
 }
