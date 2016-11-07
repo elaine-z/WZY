@@ -1,18 +1,5 @@
-.header{
-	height: 52px;
-	line-height: 52px;
-	background-color:#f8f8f8;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 99;
-	overflow: hidden;
-}
 .content{
-	position: absolute;
-	top: 52px;
-	bottom: 52px;
+	margin-bottom: 60px;
 }
 .back,.menu{
 	float: left;
@@ -30,7 +17,7 @@
 	font-family: ;
 	line-height: 52px;
 	/*font-weight: 600;*/
-	font-size: 30px;
+	font-size: 20px;
 	background-color: #bfbfbf;
 }
 .head{
