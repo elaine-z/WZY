@@ -1,5 +1,5 @@
 .content{
-	margin-bottom: 60px;
+	/*margin-bottom: 60px;*/
 }
 .back,.menu{
 	float: left;
@@ -7,15 +7,14 @@
 	margin-top: 29px;
 }
 .footer{
-	height: 52px;
-	position: fixed;
+	height: 40px;
+	position: relative;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	z-index: 99;
+	margin-top: 20px;
 	text-align: center;
 	font-family: ;
-	line-height: 52px;
+	line-height: 40px;
 	/*font-weight: 600;*/
 	font-size: 20px;
 	background-color: #bfbfbf;
