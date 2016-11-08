@@ -1,0 +1,13 @@
+body{
+	background-image:url(../../images/person-info/bg.png);
+	background-size: 100%;
+}
+.content{
+	height: 280px;
+	position: absolute;
+	bottom: 52px;
+	top: 52px;
+	left: 0;
+	right: 0;
+	padding:50px 0;
+}

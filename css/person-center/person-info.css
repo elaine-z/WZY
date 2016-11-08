@@ -1,0 +1,43 @@
+body{
+	background-image:url(../../images/person-info/bg.png);
+	background-size: 100%;
+}
+.back{
+	float: left;
+	margin-left: 9px;
+	margin-top: 29px;
+}
+.head{
+	height: 52px;
+	width: 73px;
+	line-height: 52px;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.content{
+	height: 425px;
+	position: absolute;
+	bottom: 52px;
+	top: 52px;
+	left: 0;
+	right: 0;
+	padding:35px 0;
+}
+.head-pic{
+	text-align: center;
+}
+.person-info{
+	margin: 35px auto;
+	height: 240px;
+	width: 225px;
+}
+.list{
+	margin-bottom: 12px;
+}
+.change{
+	width: 80px;
+	margin: 35px 72px;
+}
+.form-control{
+	background: white;
+}

@@ -1,0 +1,20 @@
+body{
+	background-image:url(../../images/person-info/bg.png);
+	background-size: 100%;
+}
+.content{
+	height: 425px;
+	position: absolute;
+	top: 52px;
+	left: 0;
+	right: 0;
+	padding: 10px 15px;
+}
+.panel p{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.col-xs-4{
+	margin-bottom: 10px;
+}
+
