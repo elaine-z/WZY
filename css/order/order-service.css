@@ -1,0 +1,43 @@
+body{
+	background: #f0f0f2;
+}
+h6{
+	margin-bottom: 15px;
+}
+.container{
+	width: 355px;
+}
+.course{
+	width: 304px;
+	height: 76px;
+	margin: 35px auto;
+}
+.choice{
+	width: 76px;
+	float: left;
+}
+.choice p{
+	margin: 0 auto;
+	margin-bottom: 8px;
+	text-align: center;
+}
+.choice input{
+	margin-left: 32px;
+}
+.mind{
+	width: 304px;
+	height: ;
+	margin: 0 auto;
+}
+.time{
+	margin-left: 95px;
+}
+.mind p{
+	text-align: center;
+	margin: 5px auto;
+}
+.btn{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: right;
+}
