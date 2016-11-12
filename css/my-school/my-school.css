@@ -1,0 +1,13 @@
+body{
+	background-image:url(../../images/person-info/bg.png);
+	background-size: 100%;
+}
+.content{
+}
+.panel p{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.col-xs-4{
+	margin-bottom: 10PX;
+}

@@ -1,0 +1,18 @@
+body{
+	background-image:url(../../images/person-info/bg.png);
+	background-size: 100%;
+}
+.content{
+}
+.person-info{
+	margin: 150px auto;
+	height: 240px;
+	width: 225px;
+}
+.list{
+	margin-bottom: 12px;
+}
+.login{
+	width: 80px;
+	margin: 35px 72px;
+}

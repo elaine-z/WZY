@@ -1,0 +1,25 @@
+body{
+	background-image:url(../../images/person-info/bg.png);
+	background-size: 100%;
+}
+.content{
+	margin: 125px auto;
+}
+.head-pic{
+	text-align: center;
+}
+.person-info{
+	margin: 35px auto;
+	height: 260px;
+	width: 284px;
+}
+.list{
+	margin-bottom: 12px;
+}
+.change{
+	width: 80px;
+	margin: 35px 98px;
+}
+.form-control{
+	background: white;
+}

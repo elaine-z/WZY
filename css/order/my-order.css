@@ -1,0 +1,35 @@
+body{
+	background-image:url(../../images/person-info/bg.png);
+	background-size: 100%;
+}
+.content{
+	width: 380px;
+	height: auto;
+	margin: 100px auto;
+}
+.title{
+	font-size: 24px;
+}
+ul{
+	margin-top: 45px;
+}
+li{
+	list-style-type: disc;
+	margin-bottom: 50px;
+	margin-left: 35px;
+}
+.time{
+	height: 40px;
+	width: 150px;
+	padding: 8px 15px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 13px;
+}
+.status{
+	height: 40px;
+	width: 50px;
+	padding: 8px 15px;
+	background-color: rgba(255,255,255,0.3);
+	margin-left: 25px;
+	border-radius: 10px;
+}
