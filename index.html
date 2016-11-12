@@ -158,7 +158,30 @@
 		$('.carousel').carousel({
 			interval: 3000
 		})
-		
+		window.onload = function(){
+			var button = $('#side-menu');
+			var menuNav = $('');
+			var content = $('');
+			button.onclick = function(){
+				move(0);
+			}
+			menuNav.onclick = function(){
+				move(-220);
+			}
+			var timer = null;
+			function move(target){
+				clearInterval(timer);
+				var speed = (target-menuNav.offsetLeft)/43;
+				speed = speed>0?Math.ceil(speed):Math.floor(speed);
+				timer = setInterval(function(){
+					if(menuNav.offsetLeft == target){
+						clearInterval(timer);
+					}else{
+						menuNav.style.left = aa.offsetLeft + speed +'px';
+					}
+				},10);
+			}
+		}
 	</script>
 </body>
 </html>
