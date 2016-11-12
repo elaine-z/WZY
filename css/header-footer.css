@@ -11,7 +11,8 @@
 	position: fixed;
 	left: 0;
 	right: 0;
-	bottom: 0;;
+	bottom: 0;
+	z-index: 999;
 	margin-top: 20px;
 	text-align: center;
 	font-family: ;
@@ -26,11 +27,4 @@
 	line-height: 52px;
 	font-size: 18px;
 	margin: 0 auto;	
-}
-.header img{
-	float: left;
-	margin-left: 9px;
-	margin-top: 15px;
-	width: 25px;
-	height: 24px;
 }
