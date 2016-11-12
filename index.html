@@ -12,7 +12,88 @@
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="header"><img src="images/menu.png"id="side-menu"/></div>
+	<nav id="menu">
+		<div class="menu-content">
+		<div class="menu-header">
+			<div class="header-wrapper"><img class="person-header" src="images/header.png"/></div>
+			<div class="person-info">重邮学子</div><br/>
+			<div style="margin-top: 10px;" class="menu-line"></div>
+		</div>
+		<div class="menu-main">
+			<div class="none">
+				<div class="menu-line"></div>
+			</div>
+			<ul class="menu-list-wrapper">
+				<li class="menu-list">
+					<div style="float: left">
+						<div class="menu-line"></div>
+						<div class="menu-circle">
+							<img src="images/circle.png" alt="">
+						</div>
+						<div class="menu-line"></div>
+					</div>
+					<div class="menu-detail"style="background-color: #dde0e2">
+						<img src="images/person.png">
+						<span style="color: #8e3006;" class="person-detail">个人信息</span>
+					</div>
+				</li>
+				<li class="menu-list">
+					<div style="float: left">
+						<div class="menu-line"></div>
+						<div class="menu-circle">
+							<img src="images/circle.png" alt="">
+						</div>
+						<div class="menu-line"></div>
+					</div>
+					<div class="menu-detail">
+						<img src="images/small-search.png">
+						<span class="person-detail">我的百科</span>
+					</div>
+				</li>
+				<li class="menu-list">
+					<div style="float: left">
+						<div class="menu-line"></div>
+						<div class="menu-circle">
+							<img src="images/circle.png" alt="">
+						</div>
+						<div class="menu-line"></div>
+					</div>
+					<div class="menu-detail">
+						<img src="images/heart.png">
+						<span class="person-detail">我的预约</span>
+					</div>
+				</li>
+				<li class="menu-list">
+					<div style="float: left">
+						<div class="menu-line"></div>
+						<div class="menu-circle">
+							<img src="images/circle.png" alt="">
+						</div>
+						<div class="menu-line"></div>
+					</div>
+					<div class="menu-detail">
+						<img src="images/book.png">
+						<span class="person-detail">我的党校</span>
+					</div>
+				</li>
+				<li class="menu-list">
+					<div style="float: left">
+						<div class="menu-line"></div>
+						<div class="menu-circle">
+							<img src="images/circle.png" alt="">
+						</div>
+					</div>
+					<div class="menu-detail">
+						<img src="images/other.png">
+						<span class="person-detail">其&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp他</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+	<main id="panel">
+	<div class="header"><img src="images/menu.png"class="toggle-button"/></div>
 	<div class="content">
 		<div id="myCarousel" class="carousel slide">
 		    <!-- 轮播下方小圆点 -->
@@ -38,6 +119,7 @@
 		        </div>
 		    </div>
 		</div>
+		<div class="light"style="height: 40px;"></div>
 		<div class="nav-wrapper container">
 			<div class="row">
 				<li class="col-xs-3 col-sm-3 col-lg-3">
@@ -74,6 +156,7 @@
 				</li>
 			</div>
 		</div>
+		<div class="light"style="height: 40px;"></div>
 		<div class="details cy-Encyclopedia">
 			<div class="info-title">重邮百科</div>
 			<div class="info-content">
@@ -99,6 +182,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="light"></div>
 		<div class="details cy-pics">
 			<div class="info-title">重邮图库</div>
 			<div class="info-content">
@@ -124,6 +208,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="light"></div>
 		<div class="details cy-school">
 			<div class="info-title">党校学习</div>
 			<div class="info-content">
@@ -149,39 +234,29 @@
 				</div>
 			</div>
 		</div>
+		<div class="light"></div>
 	</div>
+	</main>
 	<div class="footer">
 		微校微+工作室出品
 	</div>
+	<script src="js/slideout.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		//轮播自动播放
 		$('.carousel').carousel({
 			interval: 3000
 		})
-		window.onload = function(){
-			var button = $('#side-menu');
-			var menuNav = $('');
-			var content = $('');
-			button.onclick = function(){
-				move(0);
-			}
-			menuNav.onclick = function(){
-				move(-220);
-			}
-			var timer = null;
-			function move(target){
-				clearInterval(timer);
-				var speed = (target-menuNav.offsetLeft)/43;
-				speed = speed>0?Math.ceil(speed):Math.floor(speed);
-				timer = setInterval(function(){
-					if(menuNav.offsetLeft == target){
-						clearInterval(timer);
-					}else{
-						menuNav.style.left = aa.offsetLeft + speed +'px';
-					}
-				},10);
-			}
-		}
+		var slideout = new Slideout({
+	        'panel': document.getElementById('panel'),
+	        'menu': document.getElementById('menu'),
+	        'padding': 256,
+	        'tolerance': 70
+	      });
+	
+	      // Toggle button
+	      document.querySelector('.toggle-button').addEventListener('click', function() {
+	        slideout.toggle();
+	      });
 	</script>
 </body>
 </html>
