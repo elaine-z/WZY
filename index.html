@@ -4,10 +4,28 @@
 	<meta charset="UTF-8">
 	<title>微主页</title>
 	<meta name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<style type="text/css">
+		/*.main-wrapper{
+			list-style-type: disc;
+			display: block;
+			-webkit-margin-before: 1em;
+		    -webkit-margin-after: 1em;
+		    -webkit-margin-start: 0px;
+		    -webkit-margin-end: 0px;
+		    -webkit-padding-start: 10px
+		}
+		.main-list{
+			display: list-item;
+			list-style: disc;
+			text-align:
+			-webkit-match-parent;
+		}*/
+	</style>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/header-footer.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/index.css" />
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
@@ -93,7 +111,6 @@
 	</div>
 	</nav>
 	<main id="panel">
-	<div class="header"><img src="images/menu.png"class="toggle-button"/></div>
 	<div class="content">
 		<div id="myCarousel" class="carousel slide">
 		    <!-- 轮播下方小圆点 -->
@@ -119,122 +136,145 @@
 		        </div>
 		    </div>
 		</div>
-		<div class="light"style="height: 40px;"></div>
-		<div class="nav-wrapper container">
-			<div class="row">
-				<li class="col-xs-3 col-sm-3 col-lg-3">
-					<div class="nav service">
-						<div class="nav-icon">
-							<center><img style="width: 40px;" class="img-responsive" src="images/mainPage/clock.png"/></center>
-						</div>
-						<div class="nav-word">服务预约</div>
-					</div>
-				</li>
-				<li class="col-xs-3 col-sm-3">
-					<div class="nav Encyclopedia">
-						<div class="nav-icon">
-							<center><img style="width: 40px;" class="img-responsive" src="images/mainPage/search.png"/></center>
-						</div>
-						<div class="nav-word">重邮百科</div>
-					</div>
-				</li>
-				<li class="col-xs-3 col-sm-3 col-lg-3">
-					<div class="nav pics">
-						<div class="nav-icon">
-							<center><img style="width: 40px;" class="img-responsive" src="images/mainPage/pics.png"/></center>
-						</div>
-						<div class="nav-word">重邮图库</div>
-					</div>
-				</li>
-				<li class="col-xs-3 col-sm-3 col-lg-3">
-					<div class="nav school">
-						<div class="nav-icon">
-							<center><img style="width: 40px;" class="img-responsive" src="images/mainPage/home.png"/></center>
-						</div>
-						<div class="nav-word">党校学习</div>
-					</div>
-				</li>
-			</div>
+		<div class="light"></div>
+		<div class="new-nav">
+			<ul class="new-nav-wrapper">
+				<li class="new-nav-list toggle-button">个人中心</li>
+				<li class="new-nav-list"><a href="">重邮百科</a></li>
+				<li class="new-nav-list"><a href="">重邮图库</a></li>
+				<li class="new-nav-list"><a href="">服务预约</a></li>
+				<li style="border-right: solid 1px #ececec;" class="new-nav-list"><a href="">党校学习</a></li>
+			</ul>
 		</div>
-		<div class="light"style="height: 40px;"></div>
-		<div class="details cy-Encyclopedia">
-			<div class="info-title">重邮百科</div>
-			<div class="info-content">
-				<div class="row">
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block pic-width"/>
+		<div class="new-content">
+			<div class="content-left left">
+				<div class="content-encyclopedia bgc">
+					<div class="content-en-header">
+						<img class="img-responsive" src="images/mainPage/cy-search.png"/>
+						<h4 class="en-title">重邮百科</h4>
+						<span class="more right"><a href="">更多></a></span>
+					</div>
+					<div class="main-en">
+						<div class="main-pics">
+							<div class="en-main-pic">
+								<div class="en-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="en-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
+							<div class="en-main-pic">
+								<div class="en-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="en-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
 						</div>
-						<div class="info-word">香樟园</div>
-					</li>
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block pic-width"/>
+						<ul class="main-wrapper">
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>香樟园</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>信科</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>风雨操场</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>规划院</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>太极操场</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content-pics bgc">
+					<div class="content-pic-header">
+						<img class="img-responsive" src="images/mainPage/cy-pic.png"/>
+						<h4 class="pic-title">重邮图库</h4>
+						<span class="more right"><a href="">更多></a></span>
+					</div>
+					<div class="main-pic">
+						<div class="main-pics">
+							<div class="pic-main-pic">
+								<div class="pic-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="pic-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
+							<div class="pic-main-pic">
+								<div class="pic-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="pic-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
+							<div class="pic-main-pic">
+								<div class="pic-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="pic-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
 						</div>
-						<div class="info-word">香樟园</div>
-					</li>
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block pic-width"/>
+						<ul class="main-wrapper">
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>香樟园</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>信科</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>风雨操场</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>规划院</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>太极操场</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>信科</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>风雨操场</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>规划院</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>太极操场</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content-right left">
+				<div class="bgc content-advice">
+					<div class="content-advice-header">
+						<img class="img-responsive" src="images/mainPage/cy-person.png"/>
+						<h4 class="advice-title">意见建议</h4>
+						<span class="more right"><a href="">更多></a></span>
+					</div>
+					<div class="main-advice">
+						<div class="firstline">
+							<div class="left"><a href="">关于百科</a></div>
+							<div class="right"><a href="">关于预约</a></div>
 						</div>
-						<div class="info-word">香樟园</div>
-					</li>
+						<div class="secondline">
+							<div class="left"><a href="">关于图库</a></div>
+							<div class="right"><a href="">其他意见</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="bgc content-school">
+					<div class="content-study-header">
+						<img class="img-responsive" src="images/mainPage/cy-search.png"/>
+						<h4 class="study-title">党校学习</h4>
+						<span class="more right"><a href="">更多></a></span>
+					</div>
+					<div class="main-study">
+						<div class="main-pics">
+							<div class="study-main-pic">
+								<div class="study-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="study-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
+							<div class="study-main-pic">
+								<div class="study-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="study-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
+							<div class="study-main-pic">
+								<div class="study-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+								<div class="study-pic"><img src="images/mainPage/picc.png" alt="" class="img-responsive"/></div>
+							</div>
+						</div>
+						<ul class="main-wrapper">
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>香樟园</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>信科</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>风雨操场</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>规划院</a></li>
+							<li class="main-list"><a href=""><span class="point"><img src="images/mainPage/point.png"/></span>太极操场</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bgc content-service">
+					<div class="content-advice-header">
+						<img class="img-responsive" src="images/mainPage/cy-clock.png"/>
+						<h4 class="advice-title">预约服务</h4>
+						<span class="more right"><a href="">更多></a></span>
+					</div>
+					<div class="main-advice">
+						<div class="firstline">
+							<div class="left"><a href="">学业预约</a></div>
+							<div class="right"><a href="">心理预约</a></div>
+						</div>
+						<div class="secondline">
+							<div class="left"><a href="">预约结果</a></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="light"></div>
-		<div class="details cy-pics">
-			<div class="info-title">重邮图库</div>
-			<div class="info-content">
-				<div class="row">
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block pic-width"/>
-						</div>
-						<div class="info-word">图片</div>
-					</li>
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block pic-width"/>
-						</div>
-						<div class="info-word">图片</div>
-					</li>
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block pic-width"/>
-						</div>
-						<div class="info-word">图片</div>
-					</li>
-				</div>
-			</div>
-		</div>
-		<div class="light"></div>
-		<div class="details cy-school">
-			<div class="info-title">党校学习</div>
-			<div class="info-content">
-				<div class="row">
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block"/>
-						</div>
-						<div class="info-word">党务通知</div>
-					</li>
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block"/>
-						</div>
-						<div class="info-word">微知识</div>
-					</li>
-					<li class="col-xs-4 col-sm-4 col-lg-4">
-						<div class="info-pic">
-							<img src="images/mainPage/detail.png"class="img-responsive center-block"/>
-						</div>
-						<div class="info-word">在线考试</div>
-					</li>
-				</div>
-			</div>
-		</div>
-		<div class="light"></div>
 	</div>
 	</main>
 	<div class="footer">
