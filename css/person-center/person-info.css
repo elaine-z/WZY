@@ -1,6 +1,6 @@
 body{
 	background-image:url(../../images/person-info/bg.png);
-	background-size: 100%;
+	background-size: cover;
 }
 .content{
 	margin: 125px auto;
